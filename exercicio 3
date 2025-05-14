@@ -1,0 +1,8 @@
+a = float(input("Digite o primeiro número: "))
+b = float(input("Digite o segundo número: "))
+c = float(input("Digite o terceiro número: "))
+
+if a > (b + c):
+    print("O primeiro número é maior que a soma dos outros dois.")
+else:
+    print("O primeiro número NÃO é maior que a soma dos outros dois.")
