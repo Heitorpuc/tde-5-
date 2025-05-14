@@ -1,0 +1,6 @@
+a = float(input("Digite o 1º valor: "))
+b = float(input("Digite o 2º valor: "))
+
+print("Soma:", a + b)
+print("Produto:", a * b)
+print("Quociente:", a / b if b != 0 else "Divisão por zero")
