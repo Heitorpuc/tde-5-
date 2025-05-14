@@ -1,0 +1,13 @@
+valores = []
+
+for a in range(10):
+    numero = int(input(f"Digite o {a+1}º número inteiro: "))
+    valores.append(numero)
+
+maximo = max(valores)
+minimo = min(valores)
+amplitude = maximo - minimo
+
+print("Valor máximo:", maximo)
+print("Valor mínimo:", minimo)
+print("Amplitude amostral:", amplitude)
