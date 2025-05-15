@@ -1,0 +1,16 @@
+import random
+
+sorteio = random.sample(range(1, 61), 6)
+print("Sorteio:", sorted(sorteio))
+
+aposta = []
+while len(aposta) < 6:
+    a = int(input("Aposte (1 a 60): "))
+    if 1 <= a <= 60 and a not in aposta:
+        aposta.append(a)
+
+acertos = [a for a in aposta if a in sorteio]
+
+print("Sua aposta:", sorted(aposta))
+print("Acertos:", sorted(acertos))
+print("Total:", len(acertos))
