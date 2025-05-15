@@ -1,0 +1,12 @@
+v = []
+while len(v) < 10:
+    a = int(input("Número positivo: "))
+    if a > 0:
+        v.append(a)
+
+print("Antes:", v)
+
+v = [x for x in v if x % 2 == 0] + [x for x in v if x % 2 != 0]
+
+print("Depois:", v)
+
