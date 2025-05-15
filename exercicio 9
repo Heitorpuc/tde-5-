@@ -1,1 +1,10 @@
+v = [int(input("Número: ")) for _ in range(10)]
+x = int(input("Buscar: "))
+contador = 0
 
+for a in range(10):
+    if v[a] == x:
+        print(f"Posição: {a}")
+        contador += 1
+
+print(f"Total: {contador}" if contador else "Não encontrado.")
