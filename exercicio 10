@@ -1,0 +1,13 @@
+vLido = []
+vPares = []
+vImpares = []
+
+for _ in range(10):
+    a = int(input("Número: "))
+    if a != 0:
+        vLido.append(a)
+        (vPares if a % 2 == 0 else vImpares).append(a)
+
+print("vLido:", vLido)
+print("vPares:", vPares)
+print("vImpares:", vImpares)
